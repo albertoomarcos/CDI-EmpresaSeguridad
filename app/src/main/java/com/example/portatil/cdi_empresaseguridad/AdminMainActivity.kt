@@ -1,5 +1,6 @@
 package com.example.portatil.cdi_empresaseguridad
 
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -21,6 +22,7 @@ class AdminMainActivity: AppCompatActivity() {
         imServicios.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(this@AdminMainActivity, "Vamos a Servicios contratados", Toast.LENGTH_SHORT).show()
+
         }
         imEstancias.setOnClickListener {
             // your code to perform when the user clicks on the button
@@ -33,6 +35,8 @@ class AdminMainActivity: AppCompatActivity() {
         imAlarmas.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(this@AdminMainActivity, "Vamos a CENTRAL ALARMAS", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, AdminAlarmasActivity::class.java)
+            startActivity(mIntent)
         }
     }
 }
