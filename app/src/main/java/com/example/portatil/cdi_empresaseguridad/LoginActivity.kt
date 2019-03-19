@@ -1,7 +1,12 @@
 package com.example.portatil.cdi_empresaseguridad
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.support.design.widget.TextInputLayout
 import android.support.v7.app.AppCompatActivity
+import android.widget.Button
+import kotlinx.android.synthetic.main.activity_login.view.*
 
 class LoginActivity: AppCompatActivity() {
 
@@ -9,5 +14,48 @@ class LoginActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_login)
+
+        setOnClicks()
+    }
+
+    fun setOnClicks() {
+        val usernameTxt = findViewById<TextInputLayout>(R.id.username_field)
+        val passwordTxt = findViewById<TextInputLayout>(R.id.password_field)
+
+
+       findViewById<Button>(R.id.login_button).setOnClickListener {
+           when(usernameTxt.textView?.text) {
+               "admin" -> {
+                   if(passwordTxt.textView.text == "admin") {
+                       val mIntent = Intent(this, AdminMainActivity::class.java)
+                       startActivity(mIntent)
+                   } else {
+                       passwordTxt.error = "Incorrect credentials"
+                       passwordTxt.isErrorEnabled = true
+                   }
+
+               }
+               "user" -> {
+                   if(passwordTxt.textView.text == "user") {
+                       val mIntent = Intent(this, UserMainActivity::class.java)
+                       startActivity(mIntent)
+                   } else {
+                       passwordTxt.error = "Incorrect credentials"
+                       passwordTxt.isErrorEnabled = true
+                   }
+
+               }
+               else -> {
+
+                   passwordTxt.error = "Incorrect credentials"
+                   passwordTxt.isErrorEnabled = true
+               }
+           }
+       }
+        findViewById<Button>(R.id.assistance_button).setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = Uri.parse("tel:0123456789")
+            startActivity(intent)
+        }
     }
 }
