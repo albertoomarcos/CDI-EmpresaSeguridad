@@ -6,7 +6,6 @@ import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.ViewPropertyAnimator;
 import android.view.Window;
 import android.view.WindowManager;
@@ -15,10 +14,14 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
+
+    private HashMap<String, String> credentials;
 
     private ImageView bookIconImageView;
     private TextView bookITextView;
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         initViews();
         new CountDownTimer(30000, 1000) {
 
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 bookITextView.setVisibility(GONE);
                 loadingProgressBar.setVisibility(GONE);
-                rootView.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.colorSplashText));
+                rootView.setBackgroundColor(ContextCompat.getColor(LoginActivity.this, R.color.colorSplashText));
                 bookIconImageView.setImageResource(R.drawable.background_color_book);
                 startAnimation();
             }
@@ -49,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }.start();
+
+        credentials = new HashMap<String, String>();
+
+        credentials.put("admin", "admin");
+        credentials.put("user", "user");
+
     }
 
     private void initViews() {
