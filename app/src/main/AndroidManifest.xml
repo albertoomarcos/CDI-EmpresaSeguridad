@@ -21,7 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserMainActivity"/>
+        <activity android:name=".UserMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".AdminMainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 

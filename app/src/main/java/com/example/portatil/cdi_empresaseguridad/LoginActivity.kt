@@ -24,9 +24,9 @@ class LoginActivity: AppCompatActivity() {
 
 
        findViewById<Button>(R.id.login_button).setOnClickListener {
-           when(usernameTxt.textView?.text) {
+           when(usernameTxt.editText?.text.toString()) {
                "admin" -> {
-                   if(passwordTxt.textView.text == "admin") {
+                   if(passwordTxt.editText?.text.toString() == "admin") {
                        val mIntent = Intent(this, AdminMainActivity::class.java)
                        startActivity(mIntent)
                    } else {
@@ -36,7 +36,7 @@ class LoginActivity: AppCompatActivity() {
 
                }
                "user" -> {
-                   if(passwordTxt.textView.text == "user") {
+                   if(passwordTxt.editText?.text.toString() == "user") {
                        val mIntent = Intent(this, UserMainActivity::class.java)
                        startActivity(mIntent)
                    } else {
