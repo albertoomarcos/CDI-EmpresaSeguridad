@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_navigationViewMain"
+        android:checked="true"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Home" />
+    <item
+        android:id="@+id/search_navigationViewMain"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Notification" />
+    <item
+        android:id="@+id/notifications_navigationViewMain"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Remote" />
+    <item
+        android:id="@+id/profile_navigationViewMain"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Profile" />
+</menu>
