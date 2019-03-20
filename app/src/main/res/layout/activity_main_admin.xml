@@ -8,89 +8,58 @@
 
     <ImageView
         android:id="@+id/imServicios"
-        android:layout_width="190dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="Servicios contratados"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.039"
+        android:src="@drawable/plantilla_movil_servicios_contratados"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
-    />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
         android:id="@+id/imEstancias"
-        android:layout_width="190dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
         android:contentDescription="Estancias cliente"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/plantilla_movil_estancias_clientes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
-    />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imGestion"
-        android:layout_width="190dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="Gestión Abonados"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imAlarmas"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72"
-    />
+        android:src="@drawable/plantilla_movil_gestionar_abonados"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
+    <ImageView
         android:id="@+id/imAlarmas"
-        android:layout_width="190dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="Central de Alarmas"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72"
-    />
-
+        android:src="@drawable/plantilla_movil_central_de_alarmas"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
         android:layout_width="395dp"
-        android:layout_height="122dp"
+        android:layout_height="58dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.986" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
