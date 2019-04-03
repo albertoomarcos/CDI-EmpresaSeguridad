@@ -14,10 +14,10 @@ class AdminMainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_admin)
 
-        val imServicios = findViewById(R.id.imServicios) as ImageView
-        val imEstancias = findViewById(R.id.imEstancias) as ImageView
-        val imGestion = findViewById(R.id.imGestion) as ImageView
-        val imAlarmas = findViewById(R.id.imAlarmas) as ImageView
+        var imServicios = findViewById(R.id.imServicios) as ImageView
+        var imEstancias = findViewById(R.id.imEstancias) as ImageView
+        var imGestion = findViewById(R.id.imGestion) as ImageView
+        var imAlarmas = findViewById(R.id.imAlarmas) as ImageView
 
         imServicios.setOnClickListener {
             // your code to perform when the user clicks on the button
@@ -31,6 +31,8 @@ class AdminMainActivity: AppCompatActivity() {
         imGestion.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(this@AdminMainActivity, "Vamos a GESTION ABONADOS", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, DomoticaPrincipal::class.java) //QUITAR DE AQUI
+            startActivity(mIntent)
         }
         imAlarmas.setOnClickListener {
             // your code to perform when the user clicks on the button
