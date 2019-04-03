@@ -38,6 +38,10 @@
         <activity android:name=".DomoticaPrincipal"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+
+        <activity android:name=".DomoticaNuevaPlanta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 

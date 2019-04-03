@@ -1,5 +1,6 @@
 package com.example.portatil.cdi_empresaseguridad
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
@@ -17,6 +18,8 @@ class DomoticaPrincipal: AppCompatActivity() {
         imAniadirNueva.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(this@DomoticaPrincipal, "Vamos a añadir nueva planta", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, DomoticaNuevaPlanta::class.java)
+            startActivity(mIntent)
         }
         imVisualizarPlantas.setOnClickListener {
             // your code to perform when the user clicks on the button
