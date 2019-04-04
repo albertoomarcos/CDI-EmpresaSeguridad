@@ -27,9 +27,9 @@ class DomoticaNuevaPlanta: AppCompatActivity() {
         }
         imBanio.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaNuevaPlanta, "Vamos a gestion Banio", Toast.LENGTH_SHORT).show()
-            //val mIntent = Intent(this, DomoticaPrincipal::class.java) //QUITAR DE AQUI
-            //startActivity(mIntent)
+            //Toast.makeText(this@DomoticaNuevaPlanta, "Vamos a gestion Banio", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, DomoticaBanio::class.java)
+            startActivity(mIntent)
         }
         imSalaServidores.setOnClickListener {
             // your code to perform when the user clicks on the button

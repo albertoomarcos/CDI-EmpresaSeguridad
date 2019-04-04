@@ -18,7 +18,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -40,6 +39,10 @@
             android:theme="@style/AppTheme"/>
 
         <activity android:name=".DomoticaNuevaPlanta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".DomoticaBanio"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
     </application>
