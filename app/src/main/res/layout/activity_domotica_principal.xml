@@ -9,25 +9,31 @@
         android:id="@+id/imVisualizarPlantas"
         android:layout_width="174dp"
         android:layout_height="585dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
         app:srcCompat="@drawable/visualizar_plantas_existentes" />
 
     <ImageView
         android:id="@+id/imAniadirNueva"
         android:layout_width="174dp"
         android:layout_height="585dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aniadir_nueva_planta" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="395dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166"
-        app:srcCompat="@drawable/aniadir_nueva_planta" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_activity_main_bottom_navigation" />
 </android.support.constraint.ConstraintLayout>

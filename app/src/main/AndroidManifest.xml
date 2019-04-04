@@ -45,7 +45,10 @@
         <activity android:name=".DomoticaBanio"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".DomoticaDespacho"
+        <activity android:name=".DomoticaDespachoOSala"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaFinal"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
     </application>

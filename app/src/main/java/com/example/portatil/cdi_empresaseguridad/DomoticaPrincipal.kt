@@ -17,7 +17,6 @@ class DomoticaPrincipal: AppCompatActivity() {
 
         imAniadirNueva.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaPrincipal, "Vamos a añadir nueva planta", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaNuevaPlanta::class.java)
             startActivity(mIntent)
         }
