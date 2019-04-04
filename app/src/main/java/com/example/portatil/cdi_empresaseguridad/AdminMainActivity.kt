@@ -1,10 +1,8 @@
 package com.example.portatil.cdi_empresaseguridad
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 
@@ -14,7 +12,7 @@ class AdminMainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_admin)
 
-        var imServicios = findViewById(R.id.imServicios) as ImageView
+        var imServicios = findViewById(R.id.imTermo) as ImageView
         var imEstancias = findViewById(R.id.imEstancias) as ImageView
         var imGestion = findViewById(R.id.imGestion) as ImageView
         var imAlarmas = findViewById(R.id.imAlarmas) as ImageView

@@ -25,8 +25,8 @@ class DomoticaDespachoOSala: AppCompatActivity() {
         }
         imTemp.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaDespachoOSala, "2", Toast.LENGTH_SHORT).show()
-
+            val mIntent = Intent(this, DomoticaControl::class.java)
+            startActivity(mIntent)
         }
         imPuerta.setOnClickListener {
             // your code to perform when the user clicks on the button
