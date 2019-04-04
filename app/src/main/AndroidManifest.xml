@@ -54,6 +54,9 @@
         <activity android:name=".DomoticaControl"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaPersianas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 
