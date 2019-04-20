@@ -48,13 +48,18 @@ class UserMainActivity: AppCompatActivity() {
                     true
                 }
 
-                R.id.search_navigationViewMain -> {
+                R.id.notifications_navigationViewMain -> {
                     with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
-                        Toast.makeText(this@UserMainActivity, "TODO", Toast.LENGTH_SHORT).show()
+                        if(this == null || !this.isVisible || this !is NotificationsFragment) {
+                            val mFragment = NotificationsFragment.newInstance()
+                            goToFragment(mFragment)
+
+                            bottomNavIndex = item.itemId
+                        }
                     }
                     true
                 }
-                R.id.notifications_navigationViewMain -> {
+                R.id.domotica_navigationViewMain -> {
                     with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
                         Toast.makeText(this@UserMainActivity, "TODO", Toast.LENGTH_SHORT).show()
                     }

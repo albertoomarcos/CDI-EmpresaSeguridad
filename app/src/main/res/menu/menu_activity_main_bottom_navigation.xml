@@ -7,11 +7,11 @@
         android:icon="@drawable/ico_home"
         android:title="Inicio" />
     <item
-        android:id="@+id/search_navigationViewMain"
+        android:id="@+id/notifications_navigationViewMain"
         android:icon="@drawable/ico_notificaciones"
         android:title="Notificaciones" />
     <item
-        android:id="@+id/notifications_navigationViewMain"
+        android:id="@+id/domotica_navigationViewMain"
         android:icon="@drawable/ico_domotica"
         android:title="Domótica" />
     <item
