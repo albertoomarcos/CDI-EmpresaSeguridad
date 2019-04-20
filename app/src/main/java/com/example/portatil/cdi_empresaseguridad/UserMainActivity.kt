@@ -1,105 +1,125 @@
 package com.example.portatil.cdi_empresaseguridad
 
+import android.content.Intent
 import android.os.Bundle
+import android.support.design.widget.BottomNavigationView
+import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.Toast
+import android.widget.FrameLayout
+
+
 
 class UserMainActivity: AppCompatActivity() {
+
+    private lateinit var bottomNavigation: BottomNavigationView
+
+    private var bottomNavIndex = R.id.home_navigationViewMain
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_user)
+
+        this.bottomNavigation = findViewById(R.id.bottomNavigationView)
+
+        with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
+            if(this == null || !this.isVisible)
+                bottomNavigation.selectedItemId = bottomNavIndex
+        }
     }
 
 
     override fun onStart() {
         super.onStart()
 
-        val expand_action_0 = findViewById<ImageView>(R.id.expand_action_0)
-        expand_action_0.setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_0)
-            val textView = findViewById<TextView>(R.id.description_0)
+        bottomNavigation.setOnNavigationItemSelectedListener { item ->
 
-            view.visibility = ImageView.GONE
-            expanded_action.visibility = LinearLayout.VISIBLE
-            textView.maxLines = Int.MAX_VALUE
+            when(item.itemId) {
+                R.id.home_navigationViewMain -> {
+                    with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
+                        if(this == null || !this.isVisible || this !is UserMainFragment) {
+                            val mFragment = UserMainFragment.newInstance()
+                            goToFragment(mFragment)
 
+                            bottomNavIndex = item.itemId
+                        }
+                    }
+                    true
+                }
 
-        }
+                R.id.search_navigationViewMain -> {
+                    with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
+                        Toast.makeText(this@UserMainActivity, "TODO", Toast.LENGTH_SHORT).show()
+                    }
+                    true
+                }
+                R.id.notifications_navigationViewMain -> {
+                    with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
+                        Toast.makeText(this@UserMainActivity, "TODO", Toast.LENGTH_SHORT).show()
+                    }
+                    true
+                }
+                R.id.profile_navigationViewMain -> {
+                    with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
+                        if(this == null || !this.isVisible || this !is ProfileFragment) {
+                            val mFragment = ProfileFragment.newInstance()
+                            goToFragment(mFragment)
 
-        findViewById<ImageView>(R.id.collapse_action_0).setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_0)
-            val textView = findViewById<TextView>(R.id.description_0)
+                            bottomNavIndex = item.itemId
+                        }
+                    }
+                    true
+                }
 
-            expand_action_0.visibility = ImageView.VISIBLE
-            expanded_action.visibility = LinearLayout.GONE
-            textView.maxLines = 5
-        }
+                else -> false
 
-        val expand_action_1 = findViewById<ImageView>(R.id.expand_action_1)
-        expand_action_1.setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_1)
-            val textView = findViewById<TextView>(R.id.description_1)
+            }
 
-            view.visibility = ImageView.GONE
-            expanded_action.visibility = LinearLayout.VISIBLE
-            textView.maxLines = Int.MAX_VALUE
-
-
-        }
-
-        findViewById<ImageView>(R.id.collapse_action_1).setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_1)
-            val textView = findViewById<TextView>(R.id.description_1)
-
-            expand_action_1.visibility = ImageView.VISIBLE
-            expanded_action.visibility = LinearLayout.GONE
-            textView.maxLines = 5
-        }
-
-        val expand_action_2 = findViewById<ImageView>(R.id.expand_action_2)
-        expand_action_2.setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_2)
-            val textView = findViewById<TextView>(R.id.description_2)
-
-            view.visibility = ImageView.GONE
-            expanded_action.visibility = LinearLayout.VISIBLE
-            textView.maxLines = Int.MAX_VALUE
-
-
-        }
-
-        findViewById<ImageView>(R.id.collapse_action_2).setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_2)
-            val textView = findViewById<TextView>(R.id.description_2)
-
-            expand_action_2.visibility = ImageView.VISIBLE
-            expanded_action.visibility = LinearLayout.GONE
-            textView.maxLines = 5
-        }
-
-        val expand_action_3 = findViewById<ImageView>(R.id.expand_action_3)
-        expand_action_3.setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_3)
-            val textView = findViewById<TextView>(R.id.description_3)
-
-            view.visibility = ImageView.GONE
-            expanded_action.visibility = LinearLayout.VISIBLE
-            textView.maxLines = Int.MAX_VALUE
-
-
-        }
-
-        findViewById<ImageView>(R.id.collapse_action_3).setOnClickListener {view ->
-            val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_3)
-            val textView = findViewById<TextView>(R.id.description_3)
-
-            expand_action_3.visibility = ImageView.VISIBLE
-            expanded_action.visibility = LinearLayout.GONE
-            textView.maxLines = 5
         }
     }
+
+    override fun onResume() {
+
+        with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
+            if (this == null || !this.isVisible)
+                bottomNavigation.selectedItemId = bottomNavIndex
+        }
+        super.onResume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        bottomNavIndex = bottomNavigation.selectedItemId
+    }
+
+
+
+    /**
+     * Go to home in case of back pressed
+     */
+    override fun onBackPressed() {
+
+        if(bottomNavigation.selectedItemId != R.id.home_navigationViewMain)
+            bottomNavigation.selectedItemId = R.id.home_navigationViewMain
+        else {
+            val intent = Intent(Intent.ACTION_MAIN)
+            intent.addCategory(Intent.CATEGORY_HOME)
+            startActivity(intent)
+        }
+    }
+
+    /**
+     * Go to fragment view
+     */
+    private fun goToFragment(fragment: Fragment) {
+
+        supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.frameLayout_mainActivity, fragment)
+                .commitAllowingStateLoss()
+
+    }
+
 }
+

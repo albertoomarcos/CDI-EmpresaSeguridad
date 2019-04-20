@@ -18,14 +18,7 @@ class DomoticaFinal: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_domotica_fin)
 
-        val imAtras = findViewById(R.id.imAtras) as ImageView
-        val imAniadir = findViewById(R.id.imAniadir) as ImageView
-
-        imAtras.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaFinal, "Volver atras", Toast.LENGTH_SHORT).show()
-
-        }
+        val imAniadir = findViewById<ImageView>(R.id.imAniadir)
 
         name = findViewById(R.id.editNombre)
         name.addTextChangedListener(object: TextWatcher {
