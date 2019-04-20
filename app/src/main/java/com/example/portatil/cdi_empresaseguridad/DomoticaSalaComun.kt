@@ -6,20 +6,20 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
 import android.widget.Toast
 
-class DomoticaDespachoOSala: AppCompatActivity() {
+class DomoticaSalaComun: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_despacho)
+        setContentView(R.layout.activity_admin_sala_comun)
 
-        var imLuz = findViewById(R.id.imLuz) as ImageView
-        var imTemp = findViewById(R.id.imTemp) as ImageView
-        var imPuerta = findViewById(R.id.imPuerta) as ImageView
-        var imVentana = findViewById(R.id.imVentana) as ImageView
-        var imOtros = findViewById(R.id.imOtros) as ImageView
+        var imLuz = findViewById(R.id.imLuz2) as ImageView
+        var imTemp = findViewById(R.id.imTemp2) as ImageView
+        var imPuerta = findViewById(R.id.imPuerta2) as ImageView
+        var imVentana = findViewById(R.id.imVentana2) as ImageView
+        var imOtros = findViewById(R.id.imOtros2) as ImageView
 
         imLuz.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaDespachoOSala, "1", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@DomoticaDespacho, "1", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaFinal::class.java)
             startActivity(mIntent)
         }
@@ -30,7 +30,7 @@ class DomoticaDespachoOSala: AppCompatActivity() {
         }
         imPuerta.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaDespachoOSala, "3", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@DomoticaDespacho, "3", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaFinal::class.java)
             startActivity(mIntent)
         }
@@ -42,7 +42,7 @@ class DomoticaDespachoOSala: AppCompatActivity() {
         }
         imOtros.setOnClickListener{
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaDespachoOSala, "5", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@DomoticaSalaComun, "5", Toast.LENGTH_SHORT).show()
 
         }
     }

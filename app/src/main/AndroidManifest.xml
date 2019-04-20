@@ -49,7 +49,7 @@
         <activity android:name=".DomoticaBanio"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".DomoticaDespachoOSala"
+        <activity android:name=".DomoticaDespacho"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
         <activity android:name=".DomoticaFinal"
@@ -59,6 +59,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
         <activity android:name=".DomoticaPersianas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaSalaComun"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
     </application>
