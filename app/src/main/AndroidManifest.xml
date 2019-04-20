@@ -70,6 +70,9 @@
         <activity android:name=".DomoticaDespachoOtros"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaServidores"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 
