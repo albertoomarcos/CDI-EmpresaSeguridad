@@ -22,17 +22,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".UserMainActivity"
+        <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
         </intent-filter>
         </activity>
-
-        <activity android:name=".AdminMainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
 
         <activity android:name=".AdminAlarmasActivity"
             android:screenOrientation="portrait"

@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.design.widget.TextInputLayout
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_login.view.*
 
 class LoginActivity: AppCompatActivity() {
 
@@ -27,7 +26,8 @@ class LoginActivity: AppCompatActivity() {
            when(usernameTxt.editText?.text.toString()) {
                "admin" -> {
                    if(passwordTxt.editText?.text.toString() == "admin") {
-                       val mIntent = Intent(this, AdminMainActivity::class.java)
+                       val mIntent = Intent(this, MainActivity::class.java)
+                       mIntent.putExtra("admin", true)
                        startActivity(mIntent)
                    } else {
                        passwordTxt.error = "Incorrect credentials"
@@ -37,7 +37,8 @@ class LoginActivity: AppCompatActivity() {
                }
                "user" -> {
                    if(passwordTxt.editText?.text.toString() == "user") {
-                       val mIntent = Intent(this, UserMainActivity::class.java)
+                       val mIntent = Intent(this, MainActivity::class.java)
+                       mIntent.putExtra("admin", false)
                        startActivity(mIntent)
                    } else {
                        passwordTxt.error = "Incorrect credentials"

@@ -6,17 +6,19 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import android.widget.FrameLayout
 
 
+class MainActivity: AppCompatActivity() {
 
-class UserMainActivity: AppCompatActivity() {
+    private var admin = false
 
     private lateinit var bottomNavigation: BottomNavigationView
 
     private var bottomNavIndex = R.id.home_navigationViewMain
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        admin = intent?.extras?.getBoolean("admin") ?: false
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_user)
@@ -38,8 +40,13 @@ class UserMainActivity: AppCompatActivity() {
             when(item.itemId) {
                 R.id.home_navigationViewMain -> {
                     with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
-                        if(this == null || !this.isVisible || this !is UserMainFragment) {
+                        if(!admin && (this == null || !this.isVisible || this !is UserMainFragment)) {
                             val mFragment = UserMainFragment.newInstance()
+                            goToFragment(mFragment)
+
+                            bottomNavIndex = item.itemId
+                        } else if(admin && (this == null || !this.isVisible || this !is UserMainFragment)) {
+                            val mFragment = AdminMainFragment.newInstance()
                             goToFragment(mFragment)
 
                             bottomNavIndex = item.itemId
@@ -61,7 +68,7 @@ class UserMainActivity: AppCompatActivity() {
                 }
                 R.id.domotica_navigationViewMain -> {
                     with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
-                        Toast.makeText(this@UserMainActivity, "TODO", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity, "TODO", Toast.LENGTH_SHORT).show()
                     }
                     true
                 }

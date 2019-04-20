@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imTermo"
+                android:layout_width="180dp"
+                android:layout_height="237dp"
+                android:layout_margin="16dp"
+                android:contentDescription="Servicios contratados"
+                android:src="@drawable/plantilla_movil_servicios_contratados"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imGestion"
+                android:layout_width="180dp"
+                android:layout_height="237dp"
+                android:layout_margin="16dp"
+                android:contentDescription="Gestión Abonados"
+                android:src="@drawable/plantilla_movil_gestionar_abonados"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="413dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imEstancias"
+                android:layout_width="180dp"
+                android:layout_height="237dp"
+                android:layout_margin="16dp"
+                android:contentDescription="Estancias cliente"
+                android:src="@drawable/plantilla_movil_estancias_clientes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imAlarmas"
+                android:layout_width="180dp"
+                android:layout_height="237dp"
+                android:layout_margin="16dp"
+                android:contentDescription="Central de Alarmas"
+                android:src="@drawable/plantilla_movil_central_de_alarmas"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="413dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
