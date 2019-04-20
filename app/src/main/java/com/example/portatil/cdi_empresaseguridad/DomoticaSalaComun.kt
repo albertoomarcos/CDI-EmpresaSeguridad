@@ -42,7 +42,8 @@ class DomoticaSalaComun: AppCompatActivity() {
         }
         imOtros.setOnClickListener{
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaSalaComun, "5", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, DomoticaSalaComunOtros::class.java)
+            startActivity(mIntent)
 
         }
     }
