@@ -23,6 +23,8 @@ class DomoticaPrincipal: AppCompatActivity() {
         imVisualizarPlantas.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(this@DomoticaPrincipal, "Vamos a Visualizar Planta", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, DomoticaVisualizarPlanta1::class.java)
+            startActivity(mIntent)
         }
 
     }

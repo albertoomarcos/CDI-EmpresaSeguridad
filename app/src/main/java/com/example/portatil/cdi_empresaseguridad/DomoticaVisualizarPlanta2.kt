@@ -4,11 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
+import android.widget.Toast
 
-class DomoticaNuevaPlanta: AppCompatActivity() {
+class DomoticaVisualizarPlanta2: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_domotica_nueva_planta)
+        setContentView(R.layout.activity_visualizar_planta_2)
 
         var imDespacho = findViewById(R.id.imDespacho2) as ImageView
         var imSalaComun = findViewById(R.id.imSalaComun2) as ImageView
@@ -17,27 +18,23 @@ class DomoticaNuevaPlanta: AppCompatActivity() {
 
         imDespacho.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaNuevaPlanta, "Vamos a gestion Despacho", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaDespacho::class.java)
-            startActivity(mIntent)
+            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+
         }
         imSalaComun.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaNuevaPlanta, "Vamos a gestion Sala Comun", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaSalaComun::class.java)
-            startActivity(mIntent)
+            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+
         }
         imBanio.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaNuevaPlanta, "Vamos a gestion Banio", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaBanio::class.java)
-            startActivity(mIntent)
+            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+
         }
         imSalaServidores.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaNuevaPlanta, "Vamos a gestion Sala Servidores", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaServidores::class.java)
-            startActivity(mIntent)
+            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+
         }
 
     }

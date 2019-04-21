@@ -15,7 +15,7 @@
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/np_despacho" />
+        app:srcCompat="@drawable/planta_existente_despachos" />
 
     <ImageView
         android:id="@+id/imSalaComun2"
@@ -26,7 +26,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/np_sala_comun" />
+        app:srcCompat="@drawable/planta_existente_sala_comun" />
 
     <ImageView
         android:id="@+id/imBanio2"
@@ -37,7 +37,7 @@
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/np_banio" />
+        app:srcCompat="@drawable/planta_existente_banios" />
 
     <ImageView
         android:id="@+id/imSalaServidores2"
@@ -48,7 +48,7 @@
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/np_sala_servidores" />
+        app:srcCompat="@drawable/planta_existente_sala_servidores" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigationView2"

@@ -38,7 +38,8 @@ class AdminMainFragment: Fragment() {
         imGestion.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(view.context, "Vamos a GESTION ABONADOS", Toast.LENGTH_SHORT).show()
-            
+            val mIntent = Intent(view.context, DomoticaPrincipal::class.java)
+            startActivity(mIntent)
         }
         imAlarmas.setOnClickListener {
             // your code to perform when the user clicks on the button

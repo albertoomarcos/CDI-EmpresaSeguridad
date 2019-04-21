@@ -72,6 +72,12 @@
         <activity android:name=".GestionAbonados2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaVisualizarPlanta1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaVisualizarPlanta2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 
