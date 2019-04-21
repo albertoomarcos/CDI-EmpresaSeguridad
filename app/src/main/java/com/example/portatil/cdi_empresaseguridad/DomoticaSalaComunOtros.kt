@@ -10,9 +10,9 @@ class DomoticaSalaComunOtros: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_domotica_sala_comun_otros)
 
-        var imCafe = findViewById(R.id.imCafe) as ImageView
-        var imFotocopiadora = findViewById(R.id.imFotocopiadora) as ImageView
-        var imMico = findViewById(R.id.imMico) as ImageView
+        var imCafe = findViewById(R.id.imATemp) as ImageView
+        var imFotocopiadora = findViewById(R.id.imAPresencia) as ImageView
+        var imMico = findViewById(R.id.imAAscensor) as ImageView
 
 
 
