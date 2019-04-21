@@ -19,7 +19,6 @@ class GestionAbonados2: AppCompatActivity() {
         var imHistorico = findViewById(R.id.imHistorico) as ImageView
         var imDispositivos = findViewById(R.id.imDispositivos) as ImageView
         var imFalsasAlarmas = findViewById(R.id.imFalsasAlarmas) as ImageView
-        var imGestionServicios2 = findViewById(R.id.imGestionServicios2) as ImageView
 
         imGestionClaves.setOnClickListener {
             // your code to perform when the user clicks on the button
@@ -48,10 +47,6 @@ class GestionAbonados2: AppCompatActivity() {
             Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
         }
         imFalsasAlarmas.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
-        }
-        imGestionServicios2.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
         }

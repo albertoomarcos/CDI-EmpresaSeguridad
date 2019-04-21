@@ -23,10 +23,10 @@
 
             <ImageView
                 android:id="@+id/imDescripcion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="372dp"
+                android:layout_height="148dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imDescripcion"
-                app:srcCompat="@drawable/ge_control" />
+                app:srcCompat="@drawable/policia" />
 
             <ImageView
                 android:id="@+id/imIncidencias"
@@ -73,7 +73,7 @@
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imPolicia"
-                app:srcCompat="@drawable/ge_control" />
+                app:srcCompat="@drawable/gestionservicios" />
 
             <ImageView
                 android:id="@+id/imHistorico"
@@ -102,19 +102,11 @@
                 android:layout_height="210dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imHistorico"
                 app:srcCompat="@drawable/aa_falsas_alarmas" />
-
-            <ImageView
-                android:id="@+id/imGestionServicios2"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imDispositivos"
-                app:srcCompat="@drawable/ge_control" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
