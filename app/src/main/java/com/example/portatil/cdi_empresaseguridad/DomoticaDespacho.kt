@@ -4,18 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
-import android.widget.Toast
 
 class DomoticaDespacho: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_despacho)
 
-        var imLuz = findViewById(R.id.imLuz) as ImageView
-        var imTemp = findViewById(R.id.imTemp) as ImageView
-        var imPuerta = findViewById(R.id.imPuerta) as ImageView
-        var imVentana = findViewById(R.id.imVentana) as ImageView
-        var imOtros = findViewById(R.id.imOtros) as ImageView
+        var imLuz = findViewById(R.id.imGestionClaves) as ImageView
+        var imTemp = findViewById(R.id.imPolicia) as ImageView
+        var imPuerta = findViewById(R.id.imIncidencias) as ImageView
+        var imVentana = findViewById(R.id.imGestionServicios) as ImageView
+        var imOtros = findViewById(R.id.imHistorico) as ImageView
 
         imLuz.setOnClickListener {
             // your code to perform when the user clicks on the button

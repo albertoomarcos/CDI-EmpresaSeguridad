@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -22,25 +23,35 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/imDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/prueba2" />
+
+            <ImageView
                 android:id="@+id/imGestionClaves"
                 android:layout_width="170dp"
                 android:layout_height="210dp"
                 android:layout_margin="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ge_luz" />
+                app:layout_constraintTop_toBottomOf="@+id/imDescripcion"
+                app:srcCompat="@drawable/aa_gestion_claves" />
 
             <ImageView
                 android:id="@+id/imPolicia"
                 android:layout_width="170dp"
                 android:layout_height="210dp"
                 android:layout_margin="16dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imDescripcion"
                 app:srcCompat="@drawable/ge_control" />
 
             <ImageView
@@ -52,7 +63,7 @@
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imGestionClaves"
-                app:srcCompat="@drawable/ge_puerta" />
+                app:srcCompat="@drawable/aa_incidencias" />
 
             <ImageView
                 android:id="@+id/imGestionServicios"
@@ -63,7 +74,7 @@
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imPolicia"
-                app:srcCompat="@drawable/ge_ventana" />
+                app:srcCompat="@drawable/ge_control" />
 
             <ImageView
                 android:id="@+id/imHistorico"
@@ -72,11 +83,39 @@
                 android:layout_margin="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imIncidencias"
-                app:srcCompat="@drawable/ge_otros" />
+                app:srcCompat="@drawable/aa_historico" />
+
+            <ImageView
+                android:id="@+id/imDispositivos"
+                android:layout_width="170dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imGestionServicios"
+                app:srcCompat="@drawable/aa_dispositivos" />
+
+            <ImageView
+                android:id="@+id/imFalsasAlarmas"
+                android:layout_width="170dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imHistorico"
+                app:srcCompat="@drawable/aa_falsas_alarmas" />
+
+            <ImageView
+                android:id="@+id/imGestionServicios2"
+                android:layout_width="170dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imDispositivos"
+                app:srcCompat="@drawable/ge_control" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
@@ -87,9 +126,9 @@
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_activity_main_bottom_navigation" />
 
