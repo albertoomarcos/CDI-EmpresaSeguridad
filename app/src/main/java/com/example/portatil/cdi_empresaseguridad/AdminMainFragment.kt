@@ -26,7 +26,6 @@ class AdminMainFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         var imServicios = view.findViewById(R.id.imTermo) as ImageView
-        var imEstancias = view.findViewById(R.id.imEstancias) as ImageView
         var imGestion = view.findViewById(R.id.imGestion) as ImageView
         var imAlarmas = view.findViewById(R.id.imAlarmas) as ImageView
 
@@ -35,15 +34,10 @@ class AdminMainFragment: Fragment() {
             Toast.makeText(view.context, "Vamos a Servicios contratados", Toast.LENGTH_SHORT).show()
 
         }
-        imEstancias.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            Toast.makeText(view.context, "Vamos a ESTANCIAS CLIENTE", Toast.LENGTH_SHORT).show()
-        }
         imGestion.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(view.context, "Vamos a GESTION ABONADOS", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(view.context, DomoticaPrincipal::class.java) //QUITAR DE AQUI
-            startActivity(mIntent)
+            
         }
         imAlarmas.setOnClickListener {
             // your code to perform when the user clicks on the button
