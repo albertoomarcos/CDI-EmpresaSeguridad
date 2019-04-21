@@ -2,31 +2,43 @@ package com.example.portatil.cdi_empresaseguridad
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 
-class DomoticaPrincipal: AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class DomoticaPrincipal: Fragment() {
 
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_domotica_principal)
+    companion object {
 
-        var imAniadirNueva = findViewById(R.id.imAniadirNueva) as ImageView
-        var imVisualizarPlantas = findViewById(R.id.imVisualizarPlantas) as ImageView
+        fun newInstance(): DomoticaPrincipal {
+            return DomoticaPrincipal()
+        }
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_domotica_principal, null)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var imAniadirNueva = view.findViewById(R.id.imAniadirNueva) as ImageView
+        var imVisualizarPlantas = view.findViewById(R.id.imVisualizarPlantas) as ImageView
 
         imAniadirNueva.setOnClickListener {
             // your code to perform when the user clicks on the button
-            val mIntent = Intent(this, DomoticaNuevaPlanta::class.java)
+            val mIntent = Intent(view.context, DomoticaNuevaPlanta::class.java)
             startActivity(mIntent)
         }
         imVisualizarPlantas.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaPrincipal, "Vamos a Visualizar Planta", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaVisualizarPlanta1::class.java)
+            Toast.makeText(view.context, "Vamos a Visualizar Planta", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(view.context, DomoticaVisualizarPlanta1::class.java)
             startActivity(mIntent)
         }
-
     }
 
 }

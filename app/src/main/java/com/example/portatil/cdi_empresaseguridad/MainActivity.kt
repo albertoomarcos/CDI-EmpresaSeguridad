@@ -68,7 +68,12 @@ class MainActivity: AppCompatActivity() {
                 }
                 R.id.domotica_navigationViewMain -> {
                     with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
-                        Toast.makeText(this@MainActivity, "TODO", Toast.LENGTH_SHORT).show()
+                        if(this == null || !this.isVisible || this !is DomoticaPrincipal) {
+                            val mFragment = DomoticaPrincipal.newInstance()
+                            goToFragment(mFragment)
+
+                            bottomNavIndex = item.itemId
+                        }
                     }
                     true
                 }
