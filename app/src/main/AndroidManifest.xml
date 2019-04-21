@@ -81,7 +81,10 @@
         <activity android:name=".Alarmas2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".DomoticaItemsControl"
+        <activity android:name=".DomoticaItemsControl1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".DomoticaItemsControl2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
     </application>
