@@ -68,7 +68,12 @@ class MainActivity: AppCompatActivity() {
                 }
                 R.id.domotica_navigationViewMain -> {
                     with(supportFragmentManager.findFragmentById(R.id.frameLayout_mainActivity)) {
-                        if(this == null || !this.isVisible || this !is DomoticaPrincipal) {
+                        if(!admin && (this == null || !this.isVisible || this !is DomoticaPrincipalUser)) {
+                            val mFragment = DomoticaPrincipalUser.newInstance()
+                            goToFragment(mFragment)
+
+                            bottomNavIndex = item.itemId
+                        } else if(admin && (this == null || !this.isVisible || this !is DomoticaPrincipal)) {
                             val mFragment = DomoticaPrincipal.newInstance()
                             goToFragment(mFragment)
 
