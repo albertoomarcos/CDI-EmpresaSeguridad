@@ -22,33 +22,40 @@ class GestionAbonados2: AppCompatActivity() {
 
         imGestionClaves.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
 
         }
         imPolicia.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
         imIncidencias.setOnClickListener {
             // your code to perform when the user clicks on the button
             //Toast.makeText(this@DomoticaDespacho, "1", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
         imGestionServicios.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
         imHistorico.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
         imDispositivos.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, DomoticaItemsControl1::class.java)
+            startActivity(mIntent)
         }
         imFalsasAlarmas.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@GestionAbonados2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
 
 

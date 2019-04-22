@@ -17,15 +17,18 @@ class Alarmas2 : AppCompatActivity() {
 
         imAPresencia.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@Alarmas2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
         imATemp.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@Alarmas2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
         imAAscensor.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@Alarmas2, "TODO", Toast.LENGTH_SHORT).show()
+            val mIntent = Intent(this, ServiciosContratados::class.java)
+            startActivity(mIntent)
         }
     }
 }
