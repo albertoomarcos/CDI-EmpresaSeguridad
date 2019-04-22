@@ -10,26 +10,21 @@ class DomoticaVisualizarPlanta1: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_visualizar_planta_1)
 
-        var imPlanta1 = findViewById(R.id.imPlanta1) as ImageView
-        var imPlanta2 = findViewById(R.id.imPlanta2) as ImageView
-        var imPlanta3 = findViewById(R.id.imPlanta3) as ImageView
+        val imPlanta1 = findViewById<ImageView>(R.id.imPlanta1)
+        val imPlanta2 = findViewById<ImageView>(R.id.imPlanta2)
+        val imPlanta3 = findViewById<ImageView>(R.id.imPlanta3)
 
 
 
         imPlanta1.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaDespacho, "1", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaVisualizarPlanta2::class.java)
             startActivity(mIntent)
         }
         imPlanta2.setOnClickListener {
-            // your code to perform when the user clicks on the button
             val mIntent = Intent(this, DomoticaVisualizarPlanta2::class.java)
             startActivity(mIntent)
         }
         imPlanta3.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaDespacho, "3", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaVisualizarPlanta2::class.java)
             startActivity(mIntent)
         }

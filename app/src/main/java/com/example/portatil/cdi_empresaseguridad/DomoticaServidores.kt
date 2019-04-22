@@ -10,12 +10,10 @@ class DomoticaServidores: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servidores)
 
-        var imSensorTemp = findViewById(R.id.imSensorTemp) as ImageView
+        val imSensorTemp = findViewById<ImageView>(R.id.imSensorTemp)
 
 
         imSensorTemp.setOnClickListener {
-            // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaDespacho, "1", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaFinal::class.java)
             startActivity(mIntent)
         }

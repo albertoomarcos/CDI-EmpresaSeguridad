@@ -12,19 +12,17 @@ class AdminUsersActivity: AppCompatActivity() {
 
         val alarma = intent?.extras?.getBoolean("alarma") ?: false
 
-        var imPersona1 = findViewById(R.id.imPersona1) as ImageView
-        var imPersona2 = findViewById(R.id.imPersona2) as ImageView
-        var imPeronsa3 = findViewById(R.id.imPeronsa3) as ImageView
+        val imPersona1 = findViewById<ImageView>(R.id.imPersona1)
+        val imPersona2 = findViewById<ImageView>(R.id.imPersona2)
+        val imPeronsa3 = findViewById<ImageView>(R.id.imPeronsa3)
 
         imPersona1.setOnClickListener {
-            // your code to perform when the user clicks on the button
             val mIntent =
                     if(alarma)Intent(this, Alarmas2::class.java)
                     else Intent(this, GestionAbonados2::class.java)
             startActivity(mIntent)
         }
         imPersona2.setOnClickListener {
-            // your code to perform when the user clicks on the button
 
             val mIntent =
                     if(alarma)Intent(this, Alarmas2::class.java)
@@ -32,7 +30,6 @@ class AdminUsersActivity: AppCompatActivity() {
             startActivity(mIntent)
         }
         imPeronsa3.setOnClickListener {
-            // your code to perform when the user clicks on the button
 
             val mIntent =
                     if(alarma)Intent(this, Alarmas2::class.java)

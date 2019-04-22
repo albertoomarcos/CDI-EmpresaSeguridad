@@ -86,9 +86,6 @@
         <activity android:name=".ServiciosContratados"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".DomoticaPlaces"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
         <activity android:name=".CServidor"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>

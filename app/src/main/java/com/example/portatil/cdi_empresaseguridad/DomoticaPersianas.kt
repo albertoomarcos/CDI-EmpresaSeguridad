@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
-import android.widget.Toast
 
 class DomoticaPersianas: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,16 +11,14 @@ class DomoticaPersianas: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_domotica_persianas)
 
-        var imPSinPers = findViewById(R.id.imPSinPers) as ImageView
-        var imPConPers = findViewById(R.id.imPConPers) as ImageView
+        val imPSinPers = findViewById<ImageView>(R.id.imPSinPers)
+        val imPConPers = findViewById<ImageView>(R.id.imPConPers)
 
         imPSinPers.setOnClickListener {
-            // your code to perform when the user clicks on the button
             val mIntent = Intent(this, DomoticaFinal::class.java)
             startActivity(mIntent)
         }
         imPConPers.setOnClickListener {
-            // your code to perform when the user clicks on the button
             val mIntent = Intent(this, DomoticaFinal::class.java)
             startActivity(mIntent)
         }

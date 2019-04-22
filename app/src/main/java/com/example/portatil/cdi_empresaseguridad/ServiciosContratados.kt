@@ -69,7 +69,7 @@ class ServiciosContratados: AppCompatActivity() {
 
         }
 
-        findViewById<ImageView>(R.id.collapse_action_2)?.setOnClickListener { mView ->
+        findViewById<ImageView>(R.id.collapse_action_2)?.setOnClickListener { _ ->
             val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_2)
             val textView = findViewById<TextView>(R.id.description_2)
 
@@ -90,7 +90,7 @@ class ServiciosContratados: AppCompatActivity() {
 
         }
 
-        findViewById<ImageView>(R.id.collapse_action_3)?.setOnClickListener { mView ->
+        findViewById<ImageView>(R.id.collapse_action_3)?.setOnClickListener { _ ->
             val expanded_action = findViewById<LinearLayout>(R.id.expanded_actions_3)
             val textView = findViewById<TextView>(R.id.description_3)
 

@@ -17,7 +17,7 @@ class LoginActivity: AppCompatActivity() {
         setOnClicks()
     }
 
-    fun setOnClicks() {
+    private fun setOnClicks() {
         val usernameTxt = findViewById<TextInputLayout>(R.id.username_field)
         val passwordTxt = findViewById<TextInputLayout>(R.id.password_field)
 

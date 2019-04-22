@@ -19,7 +19,7 @@ class DomoticaItemsControl1: AppCompatActivity() {
         upDown()
     }
 
-    fun onOff() {
+    private fun onOff() {
 
         val colorActivate = Color.parseColor("#00BCD4")
         val colorDeactivate = Color.parseColor("#817F7F")
@@ -82,7 +82,7 @@ class DomoticaItemsControl1: AppCompatActivity() {
 
     }
 
-    fun upDown() {
+    private fun upDown() {
 
         val temp1 = findViewById<TextView>(R.id.temp1)
         val up1 = findViewById<ImageView>(R.id.up1)

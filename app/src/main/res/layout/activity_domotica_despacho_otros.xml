@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imTelefono"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/d_telefono" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imPC"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+
+                    app:srcCompat="@drawable/d_pc" />
+
+                <ImageView
+                    android:id="@+id/imTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/d_telefono" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imFax"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/d_fax" />
+            </LinearLayout>
+        </LinearLayout>
 
 
-    <ImageView
-        android:id="@+id/imFax"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/d_fax" />
-
-    <ImageView
-        android:id="@+id/imPC"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imTelefono"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/d_pc" />
-
-
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

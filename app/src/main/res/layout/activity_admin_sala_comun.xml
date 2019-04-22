@@ -1,85 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content">
 
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/imLuz2"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ge_luz" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imTemp2"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ge_control" />
+                <ImageView
+                    android:id="@+id/imPuerta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/ge_puerta" />
 
-            <ImageView
-                android:id="@+id/imPuerta2"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imLuz2"
-                app:srcCompat="@drawable/ge_puerta" />
+                <ImageView
+                    android:id="@+id/imLuz2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/ge_luz" />
 
-            <ImageView
-                android:id="@+id/imVentana2"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imTemp2"
-                app:srcCompat="@drawable/ge_ventana" />
+                <ImageView
+                    android:id="@+id/imOtros2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/ge_otros" />
+            </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imOtros2"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imPuerta2"
-                app:srcCompat="@drawable/ge_otros" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-        </android.support.constraint.ConstraintLayout>
-    </ScrollView>
+                <ImageView
+                    android:id="@+id/imVentana2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/ge_ventana" />
 
-</android.support.constraint.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imTemp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/ge_control" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

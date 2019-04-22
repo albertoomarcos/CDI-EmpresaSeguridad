@@ -1,5 +1,6 @@
 package com.example.portatil.cdi_empresaseguridad
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -18,6 +19,7 @@ class UserMainFragment: Fragment() {
         }
     }
 
+    @SuppressLint("InflateParams")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_main_user, null)
     }
@@ -80,7 +82,7 @@ class UserMainFragment: Fragment() {
 
         }
 
-        view.findViewById<ImageView>(R.id.collapse_action_2)?.setOnClickListener { mView ->
+        view.findViewById<ImageView>(R.id.collapse_action_2)?.setOnClickListener { _ ->
             val expanded_action = view.findViewById<LinearLayout>(R.id.expanded_actions_2)
             val textView = view.findViewById<TextView>(R.id.description_2)
 
@@ -101,7 +103,7 @@ class UserMainFragment: Fragment() {
 
         }
 
-        view.findViewById<ImageView>(R.id.collapse_action_3)?.setOnClickListener { mView ->
+        view.findViewById<ImageView>(R.id.collapse_action_3)?.setOnClickListener { _ ->
             val expanded_action = view.findViewById<LinearLayout>(R.id.expanded_actions_3)
             val textView = view.findViewById<TextView>(R.id.description_3)
 

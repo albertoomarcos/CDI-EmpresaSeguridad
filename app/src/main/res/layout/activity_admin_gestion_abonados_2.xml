@@ -1,114 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ScrollView
-        android:id="@+id/scrollView3"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content">
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/deloitte2" />
 
-            <ImageView
-                android:id="@+id/imDescripcion"
-                android:layout_width="372dp"
-                android:layout_height="148dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/deloitte2" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imDescripcion">
 
-            <ImageView
-                android:id="@+id/imGestionClaves"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imDescripcion"
-                app:srcCompat="@drawable/aa_gestion_claves" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imPolicia"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imDescripcion"
-                app:srcCompat="@drawable/policia" />
+                <ImageView
+                    android:id="@+id/imFalsasAlarmas"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/aa_falsas_alarmas" />
 
-            <ImageView
-                android:id="@+id/imIncidencias"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imGestionClaves"
-                app:srcCompat="@drawable/aa_incidencias" />
+                <ImageView
+                    android:id="@+id/imGestionClaves"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/aa_gestion_claves" />
 
-            <ImageView
-                android:id="@+id/imGestionServicios"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imPolicia"
-                app:srcCompat="@drawable/gestionservicios" />
+                <ImageView
+                    android:id="@+id/imIncidencias"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/aa_incidencias" />
 
-            <ImageView
-                android:id="@+id/imHistorico"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imIncidencias"
-                app:srcCompat="@drawable/aa_historico" />
+                <ImageView
+                    android:id="@+id/imHistorico"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/aa_historico" />
+            </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imDispositivos"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imGestionServicios"
-                app:srcCompat="@drawable/aa_dispositivos" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imFalsasAlarmas"
-                android:layout_width="170dp"
-                android:layout_height="210dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imHistorico"
-                app:srcCompat="@drawable/aa_falsas_alarmas" />
+                <ImageView
+                    android:id="@+id/imPolicia"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/policia" />
 
-        </android.support.constraint.ConstraintLayout>
-    </ScrollView>
+                <ImageView
+                    android:id="@+id/imGestionServicios"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/gestionservicios" />
 
-</android.support.constraint.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imDispositivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/aa_dispositivos" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

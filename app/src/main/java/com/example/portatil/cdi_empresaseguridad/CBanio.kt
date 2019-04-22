@@ -15,28 +15,24 @@ class CBanio: AppCompatActivity()  {
 
         if(number >=1)
             (findViewById<ConstraintLayout>(R.id.place1)).setOnClickListener {
-                // your code to perform when the user clicks on the button
                 val mIntent = Intent(this, DomoticaItemsControl1::class.java)
                 startActivity(mIntent)
             }
 
         if(number >=2)
             (findViewById<ConstraintLayout>(R.id.place2)).setOnClickListener {
-                // your code to perform when the user clicks on the button
                 val mIntent = Intent(this, DomoticaItemsControl1::class.java)
                 startActivity(mIntent)
             }
 
         if(number >=3)
             (findViewById<ConstraintLayout>(R.id.place3)).setOnClickListener {
-                // your code to perform when the user clicks on the button
                 val mIntent = Intent(this, DomoticaItemsControl1::class.java)
                 startActivity(mIntent)
             }
 
         if(number >=4)
             (findViewById<ConstraintLayout>(R.id.place4)).setOnClickListener {
-                // your code to perform when the user clicks on the button
                 val mIntent = Intent(this, DomoticaItemsControl1::class.java)
                 startActivity(mIntent)
             }

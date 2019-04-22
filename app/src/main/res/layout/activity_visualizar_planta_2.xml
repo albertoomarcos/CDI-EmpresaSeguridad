@@ -1,59 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imDespacho2"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/planta_existente_despachos" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imSalaComun2"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/planta_existente_sala_comun" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imBanio2"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imDespacho2"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/planta_existente_banios" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imSalaServidores2"
-        android:layout_width="180dp"
-        android:layout_height="237dp"
-        android:layout_margin="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imSalaComun2"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/planta_existente_sala_servidores" />
+                <ImageView
+                    android:id="@+id/imDespacho2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/planta_existente_despachos" />
 
-</android.support.constraint.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imBanio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/planta_existente_banios" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imSalaComun2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/planta_existente_sala_comun" />
+
+                <ImageView
+                    android:id="@+id/imSalaServidores2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="8dp"
+                    app:srcCompat="@drawable/planta_existente_sala_servidores" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

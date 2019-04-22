@@ -1,12 +1,11 @@
 package com.example.portatil.cdi_empresaseguridad
 
-import android.content.Intent
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 
 class NotificationsFragment: Fragment() {
 
@@ -17,6 +16,7 @@ class NotificationsFragment: Fragment() {
         }
     }
 
+    @SuppressLint("InflateParams")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_notifications, null)
     }
