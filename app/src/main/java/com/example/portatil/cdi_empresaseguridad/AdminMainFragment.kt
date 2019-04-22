@@ -32,13 +32,13 @@ class AdminMainFragment: Fragment() {
         imServicios.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(view.context, "Vamos a Servicios contratados", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(view.context, GestionAbonados2::class.java)
+            val mIntent = Intent(view.context, ServiciosContratados::class.java)
             startActivity(mIntent)
         }
         imGestion.setOnClickListener {
             // your code to perform when the user clicks on the button
             Toast.makeText(view.context, "Vamos a GESTION ABONADOS", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(view.context, DomoticaPrincipal::class.java)
+            val mIntent = Intent(view.context, GestionAbonados2::class.java)
             startActivity(mIntent)
         }
         imAlarmas.setOnClickListener {

@@ -83,6 +83,9 @@
         <activity android:name=".DomoticaItemsControl2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".ServiciosContratados"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 
