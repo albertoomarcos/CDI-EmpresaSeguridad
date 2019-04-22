@@ -30,7 +30,7 @@
         </intent-filter>
         </activity>
 
-        <activity android:name=".AdminAlarmasActivity"
+        <activity android:name=".AdminUsersActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
 
