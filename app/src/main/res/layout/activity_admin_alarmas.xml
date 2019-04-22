@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/persona1" />
+        app:srcCompat="@drawable/upm" />
 
     <ImageView
         android:id="@+id/imPersona2"
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imPersona1"
-        app:srcCompat="@drawable/persona1" />
+        app:srcCompat="@drawable/deloitte2" />
 
     <ImageView
         android:id="@+id/imPeronsa3"
@@ -40,5 +40,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imPersona2"
-        app:srcCompat="@drawable/persona1" />
+        app:srcCompat="@drawable/brait" />
 </android.support.constraint.ConstraintLayout>
