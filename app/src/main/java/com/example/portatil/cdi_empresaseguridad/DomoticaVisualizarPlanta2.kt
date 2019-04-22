@@ -18,31 +18,28 @@ class DomoticaVisualizarPlanta2: AppCompatActivity() {
 
         imDespacho.setOnClickListener {
             // your code to perform when the user clicks on the button
-            val mIntent = Intent(this, DomoticaPlaces::class.java)
+            val mIntent = Intent(this, CDespacho::class.java)
             mIntent.putExtra("number", 4)
             startActivity(mIntent)
 
         }
         imSalaComun.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaPlaces::class.java)
+            val mIntent = Intent(this, CSalaComun::class.java)
             mIntent.putExtra("number", 1)
             startActivity(mIntent)
 
         }
         imBanio.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaPlaces::class.java)
+            val mIntent = Intent(this, CBanio::class.java)
             mIntent.putExtra("number", 4)
             startActivity(mIntent)
 
         }
         imSalaServidores.setOnClickListener {
             // your code to perform when the user clicks on the button
-            //Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
-            val mIntent = Intent(this, DomoticaPlaces::class.java)
+            val mIntent = Intent(this, CServidor::class.java)
             mIntent.putExtra("number", 1)
             startActivity(mIntent)
 
