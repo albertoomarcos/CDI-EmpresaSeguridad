@@ -14,7 +14,8 @@
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        app:srcCompat="@drawable/kennedy_cara_square"
+        tools:srcCompat="@drawable/kennedy_cara_square" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -31,25 +32,25 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre" />
+            android:text="Ana" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Apellidos" />
+            android:text="Garcia Pintado" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Particular o empresa" />
+            android:text="Brait Consulting Group" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dirección" />
+            android:text="Calle Oberón numero 7, 28030" />
     </LinearLayout>
 
     <TextView
