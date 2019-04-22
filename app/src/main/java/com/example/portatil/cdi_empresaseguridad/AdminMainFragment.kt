@@ -31,20 +31,20 @@ class AdminMainFragment: Fragment() {
 
         imServicios.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(view.context, "Vamos a Servicios contratados", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(view.context, "Vamos a Servicios contratados", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(view.context, ServiciosContratados::class.java)
             startActivity(mIntent)
         }
         imGestion.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(view.context, "Vamos a GESTION ABONADOS", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(view.context, "Vamos a GESTION ABONADOS", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(view.context, AdminUsersActivity::class.java)
             mIntent.putExtra("alarma", false)
             startActivity(mIntent)
         }
         imAlarmas.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(view.context, "Vamos a CENTRAL ALARMAS", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(view.context, "Vamos a CENTRAL ALARMAS", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(view.context, AdminUsersActivity::class.java)
             mIntent.putExtra("alarma", true)
             startActivity(mIntent)

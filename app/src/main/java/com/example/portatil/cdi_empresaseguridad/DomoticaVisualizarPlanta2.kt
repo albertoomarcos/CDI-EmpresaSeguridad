@@ -25,7 +25,7 @@ class DomoticaVisualizarPlanta2: AppCompatActivity() {
         }
         imSalaComun.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaPlaces::class.java)
             mIntent.putExtra("number", 1)
             startActivity(mIntent)
@@ -33,7 +33,7 @@ class DomoticaVisualizarPlanta2: AppCompatActivity() {
         }
         imBanio.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaPlaces::class.java)
             mIntent.putExtra("number", 4)
             startActivity(mIntent)
@@ -41,7 +41,7 @@ class DomoticaVisualizarPlanta2: AppCompatActivity() {
         }
         imSalaServidores.setOnClickListener {
             // your code to perform when the user clicks on the button
-            Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@DomoticaVisualizarPlanta2, "TODO", Toast.LENGTH_SHORT).show()
             val mIntent = Intent(this, DomoticaPlaces::class.java)
             mIntent.putExtra("number", 1)
             startActivity(mIntent)
