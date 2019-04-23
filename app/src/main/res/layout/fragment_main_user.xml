@@ -33,7 +33,7 @@
                     android:layout_marginEnd="32dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@drawable/alarma" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -43,7 +43,9 @@
                     android:layout_marginEnd="24dp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Titulo de servicio"
+                    android:text="Alarma centralizada"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +96,19 @@
                     app:layout_constraintEnd_toEndOf="@+id/imageButton"
                     app:layout_constraintStart_toStartOf="@+id/imageButton"
                     app:layout_constraintTop_toBottomOf="@+id/imageButton"
-                    app:layout_constraintVertical_bias="1.0">
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8.45 €" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
 
                     <ImageView
                         android:id="@+id/imageView2"
@@ -108,26 +122,7 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher_round" />
-
-                    <Space
-                        android:layout_width="8dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_weight="1"
-                        app:layout_constraintBottom_toBottomOf="@+id/description_0"
-                        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-                        app:layout_constraintStart_toStartOf="@+id/imageButton"
-                        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/b_on" />
 
                     <Space
                         android:layout_width="8dp"
@@ -146,11 +141,11 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@android:drawable/ic_menu_delete" />
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="140dp"
                         android:layout_weight="1" />
 
                     <ImageView
@@ -191,7 +186,7 @@
                     android:layout_marginEnd="32dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@drawable/domotica" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -201,7 +196,9 @@
                     android:layout_marginEnd="24dp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Titulo de servicio"
+                    android:text="Domotica luces integral "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton1"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -253,6 +250,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageButton1"
                     app:layout_constraintVertical_bias="1.0">
 
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="44.95 €" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="40dp"
@@ -265,26 +274,7 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher_round" />
-
-                    <Space
-                        android:layout_width="8dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_weight="1"
-                        app:layout_constraintBottom_toBottomOf="@+id/description_0"
-                        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-                        app:layout_constraintStart_toStartOf="@+id/imageButton"
-                        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/b_on" />
 
                     <Space
                         android:layout_width="8dp"
@@ -303,11 +293,11 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@android:drawable/ic_menu_delete" />
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="140dp"
                         android:layout_weight="1" />
 
                     <ImageView
@@ -352,7 +342,7 @@
                     android:layout_marginEnd="32dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@drawable/temperatura" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -362,7 +352,9 @@
                     android:layout_marginEnd="24dp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Titulo de servicio"
+                    android:text="Domotica temperatura"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton2"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -414,6 +406,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageButton2"
                     app:layout_constraintVertical_bias="1.0">
 
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="45.95 €" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <ImageView
                         android:id="@+id/imageView20"
                         android:layout_width="40dp"
@@ -426,26 +430,7 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher_round" />
-
-                    <Space
-                        android:layout_width="8dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <ImageView
-                        android:id="@+id/imageView16"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_weight="1"
-                        app:layout_constraintBottom_toBottomOf="@+id/description_0"
-                        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-                        app:layout_constraintStart_toStartOf="@+id/imageButton"
-                        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/b_on" />
 
                     <Space
                         android:layout_width="8dp"
@@ -464,11 +449,11 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@android:drawable/ic_menu_delete" />
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="140dp"
                         android:layout_weight="1" />
 
                     <ImageView
@@ -516,7 +501,7 @@
                     android:layout_marginEnd="32dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@drawable/persianas" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -526,7 +511,9 @@
                     android:layout_marginEnd="24dp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Titulo de servicio"
+                    android:text="Control persianas remoto"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/imageButton9"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -576,7 +563,19 @@
                     app:layout_constraintEnd_toEndOf="@+id/imageButton9"
                     app:layout_constraintStart_toStartOf="@+id/imageButton9"
                     app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-                    app:layout_constraintVertical_bias="1.0">
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9.95 €" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
 
                     <ImageView
                         android:id="@+id/imageView21"
@@ -590,26 +589,7 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher_round" />
-
-                    <Space
-                        android:layout_width="8dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <ImageView
-                        android:id="@+id/imageView62"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_weight="1"
-                        app:layout_constraintBottom_toBottomOf="@+id/description_0"
-                        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-                        app:layout_constraintStart_toStartOf="@+id/imageButton"
-                        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/b_on" />
 
                     <Space
                         android:layout_width="8dp"
@@ -628,11 +608,11 @@
                         app:layout_constraintStart_toStartOf="@+id/imageButton"
                         app:layout_constraintTop_toBottomOf="@+id/imageButton"
                         app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@android:drawable/ic_menu_delete" />
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="140dp"
                         android:layout_weight="1" />
 
                     <ImageView
