@@ -15,15 +15,15 @@ class Alarmas2 : AppCompatActivity() {
         val imAAscensor = findViewById<ImageView>(R.id.imAAscensor)
 
         imAPresencia.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAlarmasPresencia::class.java)
             startActivity(mIntent)
         }
         imATemp.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAlarmasTemperatura::class.java)
             startActivity(mIntent)
         }
         imAAscensor.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAlarmasAscensores::class.java)
             startActivity(mIntent)
         }
     }

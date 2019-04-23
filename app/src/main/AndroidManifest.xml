@@ -98,6 +98,30 @@
         <activity android:name=".CDespacho"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAbonadoClaves"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAbonadoFalsasAlarmas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAbonadoHistorico"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAbonadoIncidencias"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAbonadoPolicia"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAlarmasAscensores"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAlarmasPresencia"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivityNotificacionesAlarmasTemperatura"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
 
     </application>
 

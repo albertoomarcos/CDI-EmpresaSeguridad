@@ -19,16 +19,16 @@ class GestionAbonados2: AppCompatActivity() {
         val imFalsasAlarmas = findViewById<ImageView>(R.id.imFalsasAlarmas)
 
         imGestionClaves.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAbonadoClaves::class.java)
             startActivity(mIntent)
 
         }
         imPolicia.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAbonadoPolicia::class.java)
             startActivity(mIntent)
         }
         imIncidencias.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAbonadoIncidencias::class.java)
             startActivity(mIntent)
         }
         imGestionServicios.setOnClickListener {
@@ -36,7 +36,7 @@ class GestionAbonados2: AppCompatActivity() {
             startActivity(mIntent)
         }
         imHistorico.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAbonadoHistorico::class.java)
             startActivity(mIntent)
         }
         imDispositivos.setOnClickListener {
@@ -44,7 +44,7 @@ class GestionAbonados2: AppCompatActivity() {
             startActivity(mIntent)
         }
         imFalsasAlarmas.setOnClickListener {
-            val mIntent = Intent(this, ServiciosContratados::class.java)
+            val mIntent = Intent(this, ActivityNotificacionesAbonadoFalsasAlarmas::class.java)
             startActivity(mIntent)
         }
 
