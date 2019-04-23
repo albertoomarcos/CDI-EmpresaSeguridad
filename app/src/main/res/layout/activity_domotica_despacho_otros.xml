@@ -32,14 +32,14 @@
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
 
-                    app:srcCompat="@drawable/d_pc" />
+                    app:srcCompat="@drawable/xx_pc" />
 
                 <ImageView
                     android:id="@+id/imTelefono"
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/d_telefono" />
+                    app:srcCompat="@drawable/xx_tel" />
             </LinearLayout>
 
             <LinearLayout
@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/d_fax" />
+                    app:srcCompat="@drawable/xx_fax" />
             </LinearLayout>
         </LinearLayout>
 

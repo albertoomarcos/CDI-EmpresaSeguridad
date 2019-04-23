@@ -32,14 +32,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/sc_fotocopiadora" />
+                    app:srcCompat="@drawable/yy_fotoc" />
 
                 <ImageView
                     android:id="@+id/imAAscensor"
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/sc_micro" />
+                    app:srcCompat="@drawable/yy_micro" />
 
             </LinearLayout>
 
@@ -55,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/sc_cafetera" />
+                    app:srcCompat="@drawable/yy_caf" />
             </LinearLayout>
         </LinearLayout>
 

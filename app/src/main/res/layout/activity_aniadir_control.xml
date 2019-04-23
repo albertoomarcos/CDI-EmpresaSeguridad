@@ -32,14 +32,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/contr_radiador" />
+                    app:srcCompat="@drawable/zz_rad" />
 
                 <ImageView
                     android:id="@+id/imTermo"
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/contr_termo" />
+                    app:srcCompat="@drawable/zz_term" />
             </LinearLayout>
 
             <LinearLayout
@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_margin="8dp"
-                    app:srcCompat="@drawable/contr_ac" />
+                    app:srcCompat="@drawable/zz_air" />
             </LinearLayout>
         </LinearLayout>
 

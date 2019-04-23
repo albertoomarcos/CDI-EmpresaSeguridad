@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:layout_margin="16dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/pers_sin_pers" />
+            app:srcCompat="@drawable/ll_sin" />
 
         <ImageView
             android:id="@+id/imPConPers"
@@ -30,7 +30,7 @@
             android:layout_height="match_parent"
             android:layout_margin="16dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/per_con_pers" />
+            app:srcCompat="@drawable/ll_con" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
